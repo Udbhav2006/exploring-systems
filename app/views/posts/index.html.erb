@@ -1,0 +1,22 @@
+<div class="posts-container">
+  <% if notice %>
+    <p class="posts-notice"><%= notice %></p>
+  <% end %>
+
+  <h1 class="posts-title">Image Galary</h1>
+  <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "logout-btn" %>
+
+  <ul class="posts-list">
+    <% @posts.each do |post| %>
+      <li class="post-item">
+        <h3><%= post.name %></h3>
+        <div class="post-actions">
+          <%= link_to "Show Image", post %>
+          
+        </div>
+      </li>
+    <% end %>
+  </ul>
+
+  <%= link_to "Create New Post", new_post_path, class: "new-post-btn" %>
+</div>

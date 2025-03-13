@@ -1,0 +1,37 @@
+/* Center the form */
+.devise-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form fields */
+  .devise-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .devise-title{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Submit button */
+  .devise-container input[type="submit"] {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .devise-container input[type="submit"]:hover {
+    background: #0056b3;
+  }
+  

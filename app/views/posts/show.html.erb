@@ -1,0 +1,28 @@
+
+
+<div class="post-show-container">
+  <% if notice.present? %>
+    <p class="post-show-notice"><%= notice %></p>
+  <% end %>
+
+  <div class="post-show-content">
+    <% if @post.image.attached? %>
+      <%= image_tag @post.image, class: "post-show-image", alt: @post.name %>
+    <% end %>
+    
+    <h1 class="post-show-name"><%= @post.name %></h1>
+    
+    <div class="post-show-timestamp">
+      Created: <%= @post.created_at.strftime("%B %d, %Y at %I:%M %p") %>
+    </div>
+  </div>
+
+  <div class="post-show-actions">
+    <%= link_to "Edit this post", edit_post_path(@post), class: "post-show-link" %>
+    <span class="post-show-separator">|</span>
+    <%= link_to "Back to posts", posts_path, class: "post-show-link" %>
+    
+    <%= button_to "Destroy this post", @post, method: :delete, class: "post-show-destroy-button", 
+        form: { data: { turbo_confirm: "Are you sure you want to delete this post?" } } %>
+  </div>
+</div>

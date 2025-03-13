@@ -1,0 +1,10 @@
+<div class="edit-post-container">
+  <h1>Editing Post</h1>
+
+  <%= render "form", post: @post %>
+
+  <div class="edit-post-links">
+    <%= link_to "Show this post", @post %> |
+    <%= link_to "Back to posts", posts_path %>
+  </div>
+</div>

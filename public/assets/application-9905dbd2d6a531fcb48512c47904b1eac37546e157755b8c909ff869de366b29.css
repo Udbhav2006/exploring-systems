@@ -1,0 +1,289 @@
+/* Center the form */
+.devise-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form fields */
+  .devise-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .devise-title{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Submit button */
+  .devise-container input[type="submit"] {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .devise-container input[type="submit"]:hover {
+    background: #0056b3;
+  }
+  
+/* Post Show Page Specific Styles */
+.post-show-notice {
+    color: #10b981;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    background-color: rgba(16, 185, 129, 0.1);
+    border-radius: 0.375rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .post-show-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .post-show-content {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .post-show-image {
+    width: 100%;
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  }
+  
+  .post-show-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+  }
+  
+  .post-show-timestamp {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+  }
+  
+  .post-show-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .post-show-link {
+    display: inline-block;
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .post-show-link:hover {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+  
+  .post-show-separator {
+    color: #9ca3af;
+  }
+  
+  .post-show-destroy-button {
+    background-color: #ef4444;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .post-show-destroy-button:hover {
+    background-color: #dc2626;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .post-show-container {
+      padding: 1rem;
+      margin: 1rem;
+    }
+    
+    .post-show-actions {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .post-show-separator {
+      display: none;
+    }
+    
+    .post-show-destroy-button {
+      margin-top: 1rem;
+      width: 100%;
+    }
+  }
+
+  /* Center Content */
+.posts-container {
+    max-width: 700px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Page Title */
+.posts-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Notice Message */
+.posts-notice {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Posts List */
+.posts-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-item {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border-left: 5px solid #007bff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.post-item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #007bff;
+}
+
+/* Action Links */
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.post-actions a {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.post-actions a:hover {
+    background-color: #0056b3;
+}
+
+/* New Post Button */
+.new-post-btn {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.new-post-btn:hover {
+    background-color: #218838;
+}
+
+
+/* Center Content */
+.edit-post-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.edit-post-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Spacing */
+.edit-post-container form {
+    margin-bottom: 20px;
+}
+
+/* Links */
+.edit-post-links {
+    margin-top: 10px;
+}
+
+.edit-post-links a {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.edit-post-links a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
