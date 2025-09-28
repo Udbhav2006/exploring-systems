@@ -1,0 +1,7 @@
+/.bundle
+/gems
+
+.git
+node_modules
+log
+tmp
